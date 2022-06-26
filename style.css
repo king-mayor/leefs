@@ -41,7 +41,7 @@
 }
 .text{
     margin-top: 50px;
-    background-image: url(images/imageb.jpg);
+    background-image: url(./IMAGES/imageb.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
