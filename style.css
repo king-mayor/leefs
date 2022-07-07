@@ -247,19 +247,6 @@ footer{
     color:rgb(20, 122, 48);
 }
 @media all and (max-width: 600px){
-    .nav ul{
-        flex-direction: row;
-        margin-bottom: 15px;
-    }
-    .nav ul li a{
-        padding: 0px 5px;
-        font-size: 0.8em;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     .text h1, p{
         position: relative;
         top: 30%;
@@ -267,66 +254,114 @@ footer{
     .text p{
         font-size: 1.7em;
     }
-    .text-1{
-        font-size:0.9em;
-    }
+    
     .text-1 p{
-        padding: 5px;
+        padding: 10px;
         display: flex;
         text-align: center;
         flex-wrap: wrap;
-    }
-    .service-1{
-        flex-direction: column;
-        margin-left: 18%;
         font-size: 0.8em;
+        line-height: 20px;
     }
-    .service-1 h2{
-        line-height: 30px;
-    }
-    .service-2 {
+    .service-1, .service-2{
         flex-direction: column;
-        margin-left: 18%;
         font-size: 0.8em;
+        column-gap: 15px;
+        text-align: center;
     }
-    .service-2 h2{
-        line-height: 30px;
+    .service-1 h2, .service-2 h2{
+        column-gap: 5px;
+        font-size: 0.8em;
+        font-weight: lighter;
+        padding: 10px;
     }
-    .images-1{
-        flex-direction: column;
-        margin-left: 9%;
-        column-gap: 30px;
+    .images-1 img, .images-2 img {
+        text-align: center;
     }
-    .images-2{
-        flex-direction: column;
-        margin-left: 9%;
-        column-gap: 30px;
+    .clients-img1, .clients-img2, .clients-img3{
+        flex-wrap: wrap;
     }
-    .clients-img1 {
-        flex-direction: column;
+    .clients-img1 img, .clients-img2 img, .clients-img3 img{
+        width: 100px;
+        height: 100px;
+        text-align: center;
     }
-    .clients-img1 img{
-        margin-left: 20%;
+    .contact-info h1 {
+        font-size: 1.2em;
+        font-weight: lighter;
     }
-    .clients-img2 {
-        flex-direction: column;
-    }
-    .clients-img2 img {
-        margin-left: 20%;
-    }
-    .clients-img3 {
-        flex-direction: column;
-    }
-    .clients-img3 img{
-        margin-left: 20%;
+    .contact-info p {
+        font-size: 0.8em;
     }
     .footer-form input{
-        width: 180%;
+        width: 160%;
     }
     .footer i{
         margin-top: 25px;
     }
     .footer p{
         margin-top: 10px;
+    }
+}
+@media all and (max-width: 970px) {
+    .navbar {
+        display: none;
+    }
+    .images-1, .images-2 {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    .service-1 h2, .service-2 h2{
+        column-gap: 15px;
+        font-size: 1.2em;
+        font-weight: lighter;
+    }
+    .clients-img1, .clients-img2, .clients-img3 {
+        flex-wrap: wrap;
+    }
+    .clients-img1 img, .clients-img2 img, .clients-img3 img {
+        width: 200px;
+        height: 200px;
+    }
+    .contact-info p {
+        font-size: 0.8em;
+    }
+}
+@media all and (max-width: 1200px) {
+   .navbar {
+       display: none;
+   }
+   .images-1, .images-2 {
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+.service-1 h2, .service-2 h2{
+    column-gap: 15px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.contact-info p {
+    font-size: 0.8em;
+}
+}
+@media all and (max-width: 1350px){
+    .navbar {
+        column-gap: 50px;
+    }
+    .nav-form {
+        width: 12%;
+    }
+    .images-1 img, .images-2 img {
+        width: 250px;
+        height: 250px;
+    }
+    .service-1 h2, .service-2 h2{
+        column-gap: 15px;
+        font-size: 1.2em;
+        font-weight: lighter;
+    }
+    .clients-img1 img, .clients-img2 img, .clients-img3 img {
+        width: 200px;
+        height: 200px;
     }
 }
