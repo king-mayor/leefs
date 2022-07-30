@@ -74,6 +74,8 @@
 .text-1 p{
     font-size: 1.15em;
     padding: 5px;
+    text-align: justify;
+    margin: 0px 25px;
 }
 .image-heading {
     text-align: center;
@@ -256,10 +258,6 @@ footer{
     }
     
     .text-1 p{
-        padding: 10px;
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
         font-size: 0.8em;
         line-height: 20px;
     }
